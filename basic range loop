@@ -1,0 +1,16 @@
+#Read an integer . For all non-negative integers i< N, print i sqrd. 
+
+n = int(input())
+for x in range(n):
+   print(x**2)
+   
+#Could be done using a comprehension as well
+print(*[x**2 for x in range(n)], sep='\n')
+
+* before the bracket is there to unpack each
+
+Could be written as this as well
+[print(i**2) for i in range(n)]
+
+        
+        
